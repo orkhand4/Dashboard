@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background: rgb(11, 20, 55);
+  display: flex;
+  width: 100%;
+}
+
+.main{
+  width: 100%;
+}
+
+
+/* HEADER START  */
+
+
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  align-items: end;
+  padding-top: 40px;
+  color: #fff;
+}
+
+
+
+header>.logo-part>h5{
+  font-weight: 400;
+}
+
+header>.logo-part>h2{
+  font-weight: 600;
+}
+
+header>.search-part{
+  display: flex;
+  align-items: center;
+  background-color: rgb(17, 28, 68);
+  padding: 13px 15px;
+  border-radius: 40px;
+  gap: 10px;
+}
+
+header>.search-part>.input-part{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 5px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: rgb(11, 20, 55);
+}
+
+header>.search-part>.input-part>input{
+  background: transparent;
+}
+
+header>.search-part>.input-part>input::placeholder{
+  color: #fff;
+}
+
+header>.search-part>i{
+  color: #fff;
+  font-size: 25px;
+}
+
+header>.search-part>img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* HEADER END  */
+
+
+
+
+/* NAV START  */
+
+nav{
+  width: 310px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  color: #fff;
+  background: rgb(17, 28, 68);
+}
+
+nav> h1{
+  font-weight: 400;
+  padding: 30px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav> h1> span{
+  font-weight: bold;
+}
+
+nav>ul{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0px 15px;
+  padding-top: 40px;
+}
+
+
+nav>ul>li{
+  display: flex;
+  align-items: center;
+}
+
+nav>ul>li>i{
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+
+/* NAV END */
+
+
+
+
