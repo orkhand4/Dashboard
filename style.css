@@ -26,7 +26,6 @@ body{
 
 nav{
   width: 290px;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   background: rgb(17, 28, 68);
@@ -63,9 +62,55 @@ nav>ul>li>i{
   font-size: 20px;
 }
 
+nav>.Upgrade {
+  width: 210px;
+  background: linear-gradient(135deg, #868CFF 0%, #4318FF 100%);
+  height: 170px;
+  margin: 0 auto;
+  margin-top: 150px;
+  border-radius: 24px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 10px;
+}
+
+nav>.Upgrade>.Upgrade_icon {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 5px solid #111C44;
+  background: linear-gradient(135deg, #868CFF 0%, #4318FF 100%);
+}
+
+nav>.Upgrade>h2 {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+nav>.Upgrade>h5 {
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+}
+
 
 /* NAV END */
 
+.container{
+  padding: 15px;
+}
 
 
 /* HEADER START  */
@@ -75,8 +120,9 @@ header{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 20px 15px;
   align-items: end;
+  padding: 10px;
+  margin-block: 10px;
 }
 
 header>.logo-part>h5{
@@ -107,6 +153,7 @@ header>.search-part>.input-part{
 
 header>.search-part>.input-part>input{
   background: transparent;
+  color: #fff;
 }
 
 header>.search-part>.input-part>input::placeholder{
@@ -133,13 +180,14 @@ header>.search-part>img{
 .statistics-wrapper{
   display: flex;
   gap: 20px;
-  padding: 15px;
+  flex-wrap: wrap;
+  margin-block: 20px;
 }
 
 .statistics-wrapper>.statistics{
   background-color: rgba(17, 28, 68, 1);
   border-radius: 20px;
-  padding: 20px 17px;
+  padding: 15px;
   display: flex;
   flex: 1;
 }
@@ -174,7 +222,6 @@ header>.search-part>img{
   background-color: rgb(15, 179, 251);
 }
 
-
 .statistics-wrapper>.statistics>.statistic{
   line-height: 1.2;
 }
@@ -194,14 +241,220 @@ header>.search-part>img{
 }
 
 
-
-
 /* STATISTICS END */
 
 
+/* REVENUE START */
+
+.revenue{
+  display: flex;
+  gap: 20px;
+  margin-block: 20px;
+}
+
+
+.half{
+  width: 50%;
+  background-color: rgba(17, 28, 68, 1);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.half>.half-header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.half>.half-header>.mnth{
+  display: flex;
+  gap: 6px;
+  background-color: rgb(27, 37, 75);
+  border-radius: 7px;
+  padding: 12px 13px 11px 12px;
+}
+
+.half>.half-header>p{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.half>.half-header>.stcs-icon{
+  background-color: rgb(27, 37, 75);
+  border-radius: 10px;
+  height: 33px;
+  width: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 18px;
+}
+
+.half>.spendings-graphics{
+  display: flex;
+}
+
+.half>.spendings-graphics>.spendings>p{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.half>.spendings-graphics>.spendings>.total{
+  display: flex;
+  gap: 15px;
+  font-size: 12px;
+}
+
+.half>.spendings-graphics>.spendings>.total>span{
+  color: rgba(163, 174, 208, 1);
+  white-space: nowrap;
+}
 
 
 
+.half>.spendings-graphics>.spendings>.total>.triangle-flex{
+  display: flex;
+  color: rgba(1, 181, 116, 1);
+  gap: 10px;
+  align-items: center;
+}
+
+.half>.spendings-graphics>.spendings>.total>.triangle-flex>.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid rgba(1, 181, 116, 1);
+}
+
+.half>.spendings-graphics>.spendings>.track{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.half>.spendings-graphics>.spendings>.track>.track-check{
+  color: #fff;
+  background-color: rgba(1, 181, 116, 1);
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+}
+
+.half>.spendings-graphics>.spendings>.track>p{
+  color: rgba(1, 181, 116, 1);
+  font-weight: 500;
+}
+
+.half>.spendings-graphics>.graphics{
+  padding: 30px;
+}
+
+
+.half>.spendings-graphics>.graphics img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.half>.spendings-graphics>.graphics>ul{
+  display: flex;
+  justify-content: space-between;
+  color: rgba(163, 174, 208, 1);
+  font-size: 10px;
+  margin-top: 30px;
+}
+
+.half>.half-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.half>img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* REVENUE END */
+
+
+/* CHECK-TABLE START */
+
+
+.check-table{
+  display: flex;
+  gap: 20px;
+  margin-block: 20px;
+}
+
+.check-table>.half>.half-header>.stcs-icon>p{
+  font-size: 30px;
+  padding-bottom: 50%;
+}
+
+.check-table>.half>table{
+  width: 100%;
+  text-align: left;
+}
+
+.check-table>.half>table th{
+  font-size: 12px;
+  font-weight: 300;
+  color: rgba(163, 174, 208, 1);
+  padding-bottom: 10px;
+}
+
+.check-table>.half>table td{
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.check-table>.half>table tr{
+  line-height: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CHECK-TABLE END */
+
+
+
+
+/* FOOTER START */
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+footer>h4{
+  font-weight: 400;
+  color: #fff;
+}
+
+footer>ul{
+  display: flex;
+  gap: 15px;
+}
+
+footer>ul>li{
+  color: #fff;
+}
+
+/* FOOTER END */
 
 
 
